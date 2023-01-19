@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0 auto;
+    background-color: #333333;
+}
+/*----------------------------------*/
+.rowac{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 12px 25px;
+    background-color: white;
+}
+.s{
+    color: orangered;
+}
+.info{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin:  0 auto;
+    width: 100%;
+    padding: 5px;
+    font-size: medium;
+    text-align: right;
+    background: none;
+    color: yellow;
+    cursor: pointer;
+    border: none;
+}
+/*----------------------------------*/
+.header-top{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #333333;
+    font-weight: 600;
+    font-size: small;
+}
+.header-top a{
+    text-decoration: none;
+    color: #333333;
+}
+/*----------------------------------*/
+.header-banner{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+}
+/*----------------------------------*/
+.header-menu{
+    margin: 0 auto;
+    background-color: black;
+    border-top: #f2f2f2 1px dotted;
+}
+.header-menu nav{
+    position: relative;
+    margin: 0 auto;
+    font-size: small;
+    font-weight: 400;
+    width: 90%;
+    padding: 5px;
+}
+.header-menu ul, .header-menu li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10%;
+    border-radius: 100px;
+}
+.header-menu a:hover{
+    background-color: #f2f2f27e;
+}
+.header-menu nav button, .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0; margin: 0;
+    background: none;
+    font-size: 30px;
+    border: none;
+}
+.back{
+    margin: 0 10px;
+}
+.header-menu nav button a:hover, .back a:hover{
+    background: none;
+}
+/*----------------------------------*/
+.vgbg{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/vgbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*----------------------------------*/
+#noticias h1, #reseñas  h1, #ranking h1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #333333;
+}
+#noticias .p, #reseñas .p, #ranking .p{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    color: #333333;
+    font-size: small;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/*----------------------------------*/
+.card{
+    width: 25%;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+    transition: .2s ease;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+.card h3{
+    font-size: small;
+    font-weight: 700;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+.card h2{
+    font-weight: 500;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}.card-data p{
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    color: #333333;
+    font-size: small;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+.card-data{
+    position: relative;
+    height: 250px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+/*----------------------------------*/
+.card2{
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #f2f2f2;
+}
+.card2-img{
+    width: 40%;
+    height: 100%;
+}
+.card2-img img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.card2 h2{
+    margin-bottom: 10px;
+}
+.card2 .card-data-2{
+    position: relative;
+    width: 60%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-left: 20px;
+}
+.valoracion{
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+.valoracion dt{
+    font-size: small;
+    font-weight: 500;
+    color: #1487b4;
+}
+.valoracion dd{
+    padding: 0;
+    margin: 0 auto;
+    font-size: small;
+    font-weight: 400;
+    color: #333333;
+}
+.valoracion i{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+/*----------------------------------*/
+#noticias button, .card button{
+    position: absolute;
+    bottom: 0; right: 0;
+    background: none;
+    border: none;
+    padding: 15px 20px;
+}
+#noticias button a, .card button a{
+    text-decoration: none;
+    color: #333333;
+    transition: all .3s;
+}
+#noticias button a:hover, .card button a:hover{
+    font-weight: 600;
+    color: #1487b4;
+}
+/*----------------------------------*/
+form{
+    margin: 20px auto;
+    width: 60%;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+.input{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+}
+.submit{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    padding: 10px;
+    background: #1487b4;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    transition: .8s ease;
+}
+.submit:hover{
+    width: 30%;
+    background-color: greenyellow;
+    color: black;
+}
+.brd-100{
+    border-radius: 100px;
+}
+.valorar{
+    margin: 0 auto;
+    width: 50%;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*----------------------------------*/
+table{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+table th{
+    width: 10%;
+    font-size: medium;
+}
+table td{
+    padding: 2px;
+}
+.td-img{
+    width: 15%;
+    height: 100px;
+}
+.td-img img{
+    width: 100%;
+    height: 100%;
+}
+.td-desc{
+    width: 25%;
+    font-size: small;
+}
+table.striped tr:nth-child(even){
+    background-color: none;
+    color: black;
+}
+table.striped tr:nth-child(odd){
+    background-color: #33333348;
+    color: black;
+}
+/*----------------------------------*/
+footer{
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer-menu nav{
+    margin: 0 auto;
+    font-size: smaller;
+    font-weight: 400;
+    width: 100%;
+    padding: 50px;
+    border-top: 1px dotted #333333;
+}
+.footer-menu ul, .header-menu li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #333333;
+}
+.p-30{
+    padding: 30px;
+}
+footer p{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 5px 15px;
+    color: #1487b4;
+    font-size: 12px;
+    font-weight: 600;
+}

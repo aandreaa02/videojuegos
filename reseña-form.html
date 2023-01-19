@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Review</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function info(){
+            alert("Para conocer información de la página haga click en 'Sobre nosotros'");
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="header-top rowac">
+            <button class="back"><a href="reseñas.html"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a></button>
+        </div>
+        <div class="header-banner">
+
+        </div>
+    </header>
+
+    <form action="pagina.php" method="post">
+        <legend>APORTA A LA COMUNIDAD CON TU VALORACIÓN</legend>
+        <input class="input brd-100" type="text" name="user" id="" placeholder="Nombre de usuario">
+        <input class="input brd-100" type="text" name="game" id="" placeholder="Videojuego">
+        <textarea class="input" name="textarea" id="" cols="50" rows="8" placeholder="Escribe aquí tu comentario..."></textarea>
+        <hr>
+        <div class="input brd-100 stars valorar">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <input class="input brd-100 valorar" type="range" name="valora" id="" >
+        <input class="submit brd-100" type="submit" value="Publicar">
+    </form>
+</body>
+</html>
